@@ -1,0 +1,291 @@
+.Header {
+    height: 500px;
+
+    .headerTop {
+        height: 12.91rem;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(6.68rem, #fff), color-stop(9.95rem, rgba(255, 255, 255, 0.77)), to(rgba(255, 255, 255, 0)));
+        background: linear-gradient(to bottom, #fff 6.68rem, rgba(255, 255, 255, 0.77) 9.95rem, rgba(255, 255, 255, 0));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        .topWrap {
+            display: flex;
+            justify-content: space-around;
+
+            .infoLeft {
+                padding: 0 15px 10px 15px;
+                border-bottom: 1px solid black;
+                height: 65px;
+
+                .infoTop {
+                    display: flex;
+                    margin-top: 10px;
+
+                  img {
+                        margin-right: 15px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        margin-top: 4px;
+                        font-weight: bold;
+                    }
+                }
+            
+
+                .infoBottom {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
+
+                    .infoBottomLeft {
+                        display: flex;
+
+                        img {
+                            margin-right: 15px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .infoBottomRight {
+                        display: flex;
+
+                        img {
+                            margin-right: 15px;
+                            margin-left: 15px;
+                        }
+
+                        p {
+                            font-size: 18px; 
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .col-center {
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                -ms-flex-preferred-size: 18.18rem;
+                flex-basis: 18.18rem;
+                margin: 0 3.75%;
+                position: relative;
+
+                .logo {
+                    width: 18.18rem;
+                    margin: 0;
+                    position: absolute;
+                    top: 0.73rem;
+
+                    a {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        font-size: 1.36rem;
+                        line-height: 1;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: #7b1f25;
+
+                        img {
+                            width: 210%;
+                        }
+                    }
+                }
+            }
+
+            .col-right {
+
+                .rightTop {
+                    display: flex;
+                    margin-top: 20px;
+                    padding: 0 15px 10px 15px;
+                    border-bottom: 1px solid black;
+
+                    .socialBlock {
+                        display: flex;
+                        margin-top: 4px;
+
+                        a {
+                            padding: 0 5px;
+                        }
+                    }
+
+                    .joinButt {
+                        background-color: #a32431;
+                        padding: 7px 20px;
+                        margin: 0 5px;
+
+                        p {
+                            color: white;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .logButt {
+                        background-color: #616161;
+                        padding: 7px 15px;
+                        margin: 0 5px;
+
+                        p {
+                            color: white;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .rightBottom {
+                    margin-top: 10px;
+                    
+                    .rightBottomWrap {
+                        display: flex;
+                        float: right;
+                        margin-right: 20px;
+
+                        p {
+                            font-size: 20px;
+                            color: #a32431;
+                            margin-left: 10px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menuWrap {
+
+        .bubbleBar {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            bottom: -270px;
+            z-index: 3;
+
+            .imgBox {
+                width: 190px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+
+                img {
+                    width: 174px;
+                    border-radius: 90%;
+                    border: 4px solid white;
+                }
+
+                p {
+                    font-size: 22px;
+                    color: white;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .popBar {
+            width: 100%;
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            bottom: 0;
+            z-index: 1;
+
+            .popHold {
+               width: 190px;
+               position: relative;
+
+                div[class^="popBox"] {
+                    height: 1px;
+                    border-top-right-radius: 18px;
+                    border-top-left-radius: 18px;
+                    background-color: white;
+                    animation-name: popup;
+                    -webkit-animation-name: popup;
+                    animation-duration: .5s;
+                    animation-fill-mode: forwards;
+                    position: relative;
+                    bottom: -170px;
+                    transform: translateY(-80%);
+                    transform-origin: bottom;
+
+                    ul {
+
+                        li {
+                            margin-left: 15px;
+                            padding-top: 15px;
+                            
+                            a {
+                                font-size: 1.6rem;
+                                text-decoration: none;
+                                color: #fff;
+                                animation-name: popupFade;
+                                -webkit-animation-name: popupFade;
+                                animation-duration: .7s;
+                                animation-fill-mode: forwards;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+
+        
+    }
+}
+
+.redBar {
+    width: 100%;
+    height: 82px;
+    background-color: #a32431;
+    position: relative;
+    z-index: 2;
+    bottom: -500px;
+}
+
+@keyframes popup {
+    0% {
+        height: 0px;
+        padding-bottom: 0px;
+        
+    }
+
+    100% {
+        height: auto;
+        padding-bottom: 205px;
+        
+    }
+}
+
+@keyframes popupFade {
+    0% {
+        color: #fff;  
+    }
+
+    100% {
+        color: #444; 
+    }
+}
+
+.popinUp {
+    animation-name: popup;
+    -webkit-animation-name: popup;
+    animation-duration: 1s;
+}
